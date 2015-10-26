@@ -34,6 +34,14 @@
 -OR-
 
 on the command line, specify: '-DrunTarget=VALUE'
+>(Возможно эта ошибка связана с тайм-зоной и на разных компьютерах ведет себя по разному...
+>
+> [it is only relevant to a small geographic area, a specific moment in time, or an extraordinarily narrow situation that is not generally applicable to the worldwide audience of the internet](http://stackoverflow.com/questions/15764203/gwt-compiler-errors)
+>
+>[gwt-maven-plugin](http://blog.soat.fr/2013/01/gwt-tips-12-compiling-debugging-et-logging/)
+>
+>[GWT 2.6.0-rc1 error compiling](https://groups.google.com/forum/#!topic/google-web-toolkit/18hhCitwKFE))
+>
 >Перехожу, в консоли, в рабочую папку проекта и запускаю GWT-проекта в режиме **Dev Mode**:
 >
 > **mvn gwt:run -DrunTarget=hellogwt**
