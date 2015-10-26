@@ -14,4 +14,30 @@
 >
 >***mvn install:install-file -Dfile=spring4gwt-0.0.1.jar -DgroupId=com.google.code -DartifactId=spring4gwt -Dversion=0.0.1 -Dpackaging=jar***
 
+
+>При деплое GWT-проекта на Tomcat вываливается ошибка типа:
+>
+>- **Error:GWT Compiler: Element 'module' beginning on line 17 contains unexpected attribute 'type'**
+>- **Error:GWT Compiler: Failure while parsing XML**
+>
+>При запуске GWT-проекта в консоли тоже вываливается ошибка типа:
+
+[INFO] One or more required plugin parameters are invalid/missing for 'gwt:run'
+
+[0] Inside the definition for plugin 'gwt-maven-plugin' specify the following:
+
+<configuration>
+  ...
+  <runTarget>VALUE</runTarget>
+</configuration>
+
+-OR-
+
+on the command line, specify: '-DrunTarget=VALUE'
+>Перехожу, в консоли, в рабочую папку проекта и запускаю GWT-проекта в режиме **Dev Mode**:
+>
+> **mvn gwt:run -DrunTarget=hellogwt**
+>
+>Дальше в веб-броузере перехожу по ссылке: [http://127.0.0.1:8888/](http://127.0.0.1:8888/)
+
 ![result.png](result.png)
